@@ -16,64 +16,188 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- font-awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="container mx-auto">
-        <div class="navbar bg-[#0EC4CF] rounded-sm">
-            <div class="flex-1">
-              <img class="w-16 h-16 rounded-full" src="./images/logo.jpg" alt="">
-            </div>
-            <div class="flex-none">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                  <div class="indicator">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-8 w-8"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                    <span class="badge badge-sm indicator-item h-6">0</span>
-                  </div>
-                </div>
-              </div>
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                  <div class="w-10 rounded-full">
-                    <img src="./images/man's logo.jpg" alt="">
-                  </div>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Profile</a></li>
-                  <li><a>Settings</a></li>
-                  <li><a>Logout</a></li>
-                </ul>
+      <div class="navbar bg-[#0EC4CF] rounded-sm">
+        <div class="flex-1">
+          <img class="w-16 h-16 rounded-full" src="./images/logo.jpg" alt="" />
+        </div>
+        <div class="flex-none">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="badge badge-sm indicator-item h-6">0</span>
               </div>
             </div>
           </div>
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle avatar"
+            >
+              <div class="w-10 rounded-full">
+                <img src="./images/man's logo.jpg" alt="" />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Profile</a></li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-        <section class="container mx-auto mt-10">
-            <div class="flex gap-4 items-center px-10">
-                <div class="space-y-3">
-                    <h1 class="text-5xl font-semibold roboto-font text-[#0EC4CFcc]">Let's Travel</h1>
-                    <p class="opacity-70 w-4/5 lg:w-1/2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem mollitia eaque similique doloribus quasi dolor saepe quibusdam ducimus odio quas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, eius.</p>
-                    <h3 class="text-2xl font-medium">Total Budget: <span>900</span> $</h3>
-                </div>
-                <div>
-                    <img class="rounded-sm" src="./images/let's travel.jpg" alt="">
-                </div>
+      <section class="container mx-auto mt-10">
+        <div class="flex gap-4 items-center px-10">
+          <div class="space-y-3">
+            <h1 class="text-5xl font-semibold roboto-font text-[#0EC4CFcc]">
+              Let's Travel
+            </h1>
+            <p class="opacity-70 w-4/5 lg:w-1/2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Exercitationem mollitia eaque similique doloribus quasi dolor
+              saepe quibusdam ducimus odio quas! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Quo, eius.
+            </p>
+            <h3 class="text-2xl font-medium">
+              Total Budget: <span>900</span> $
+            </h3>
+          </div>
+          <div>
+            <img class="rounded-sm" src="./images/let's travel.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto mt-20">
+        <div class="flex gap-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <!-- cox's bazar -->
+            <div
+              class="flex items-center gap-3 border-2 shadow-2xl rounded-lg p-3"
+            >
+              <div class="">
+                <img
+                  class="rounded-lg w-[300px] h-auto"
+                  src="./images/cox's bazar.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-2xl font-bold">Cox's Bazar</h3>
+                <p class="text-xl font-medium">Cost: <span>300</span> $</p>
+                <button
+                  class="btn btn-primary bg-[#0EC4CF] border-none text-red-500"
+                >
+                  Add to Cart
+                </button>
+              </div>
             </div>
-        </section>
+            <!-- sajek -->
+            <div
+              class="flex items-center gap-3 border-2 shadow-2xl rounded-lg p-3"
+            >
+              <div class="">
+                <img
+                  class="rounded-lg w-[300px]"
+                  src="./images/sajek.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-2xl font-bold">Sajek</h3>
+                <p class="text-xl font-medium">Cost: <span>400</span> $</p>
+                <button
+                  class="btn btn-primary bg-[#0EC4CF] border-none text-red-500"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- khulna -->
+            <div
+              class="flex items-center gap-3 border-2 shadow-2xl rounded-lg p-3"
+            >
+              <div class="">
+                <img
+                  class="rounded-lg w-[300px]"
+                  src="./images/khulna.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-2xl font-bold">Khulna</h3>
+                <p class="text-xl font-medium">Cost: <span>200</span> $</p>
+                <button
+                  class="btn btn-primary bg-[#0EC4CF] border-none text-red-500"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- dhaka -->
+            <div
+              class="flex items-center gap-3 border-2 shadow-2xl rounded-lg p-3"
+            >
+              <div class="">
+                <img
+                  class="rounded-lg w-[300px]"
+                  src="./images/dhaka.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-2xl font-bold">Dhaka</h3>
+                <p class="text-xl font-medium">Cost: <span>350</span> $</p>
+                <button
+                  class="btn btn-primary bg-[#0EC4CF] border-none text-red-500"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="border-2 p-4 rounded-lg space-y-2">
+            <h2 class="text-3xl font-bold">Cart</h2>
+            <div class="divider divider-neutral"></div>
+            <p class="text-xl font-medium">Total Cost: <span>0</span> $</p>
+            <div class="">
+              <button class="btn">Bus +100</button>
+              <button class="btn mb-2">Train -200</button>
+              <button class="btn">Flight +500</button>
+            </div>
+            <div class="divider divider-neutral"></div>
+            <h3 class="text-xl font-medium">Grand Total: <span>0</span>$</h3>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./app.js"></script>
   </body>
