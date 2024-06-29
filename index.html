@@ -100,7 +100,7 @@
               consectetur, adipisicing elit. Quo, eius.
             </p>
             <h3 class="text-2xl font-medium">
-              Total Budget: <span>900</span> $
+              Total Budget: <span id="budget">900</span> $
             </h3>
           </div>
           <div>
@@ -203,12 +203,12 @@
             <div class="divider divider-neutral"></div>
             <p class="text-xl font-medium">Total Cost: <span id="total-cost">0</span> $</p>
             <div class="">
-              <button class="btn">Bus +100</button>
-              <button class="btn mb-2">Train -200</button>
-              <button class="btn">Flight +500</button>
+              <button onclick="getGrandTotal('bus')" class="btn">Bus +100</button>
+              <button onclick="getGrandTotal('train')" class="btn mb-2">Train -200</button>
+              <button onclick="getGrandTotal('flight')" class="btn">Flight +500</button>
             </div>
             <div class="divider divider-neutral"></div>
-            <h3 class="text-xl font-medium">Grand Total: <span>0</span>$</h3>
+            <h3 class="text-xl font-medium">Grand Total: <span id="grand-total">0</span>$</h3>
           </div>
         </div>
       </section>
