@@ -23,6 +23,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- inline css -->
+    <style>
+      li {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    </style>
   </head>
   <body>
     <header class="container mx-auto">
@@ -48,7 +58,9 @@
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
-                <span class="badge badge-sm indicator-item h-6">0</span>
+                <span id="badge-count" class="badge badge-sm indicator-item h-6"
+                  >0</span
+                >
               </div>
             </div>
           </div>
@@ -114,7 +126,7 @@
                 <h3 class="text-2xl font-bold">Cox's Bazar</h3>
                 <p class="text-xl font-medium">Cost: <span>300</span> $</p>
                 <button
-                  class="btn btn-primary bg-[#0EC4CF] border-none text-red-500"
+                  class="add-btn btn btn-primary bg-[#0EC4CF] border-none text-red-500"
                 >
                   Add to Cart
                 </button>
@@ -135,7 +147,7 @@
                 <h3 class="text-2xl font-bold">Sajek</h3>
                 <p class="text-xl font-medium">Cost: <span>400</span> $</p>
                 <button
-                  class="btn btn-primary bg-[#0EC4CF] border-none text-red-500"
+                  class="add-btn btn btn-primary bg-[#0EC4CF] border-none text-red-500"
                 >
                   Add to Cart
                 </button>
@@ -156,7 +168,7 @@
                 <h3 class="text-2xl font-bold">Khulna</h3>
                 <p class="text-xl font-medium">Cost: <span>200</span> $</p>
                 <button
-                  class="btn btn-primary bg-[#0EC4CF] border-none text-red-500"
+                  class="add-btn btn btn-primary bg-[#0EC4CF] border-none text-red-500"
                 >
                   Add to Cart
                 </button>
@@ -177,7 +189,7 @@
                 <h3 class="text-2xl font-bold">Dhaka</h3>
                 <p class="text-xl font-medium">Cost: <span>350</span> $</p>
                 <button
-                  class="btn btn-primary bg-[#0EC4CF] border-none text-red-500"
+                  class="add-btn btn btn-primary bg-[#0EC4CF] border-none text-red-500"
                 >
                   Add to Cart
                 </button>
@@ -187,7 +199,9 @@
           <div class="border-2 p-4 rounded-lg space-y-2">
             <h2 class="text-3xl font-bold">Cart</h2>
             <div class="divider divider-neutral"></div>
-            <p class="text-xl font-medium">Total Cost: <span>0</span> $</p>
+            <ul id="place-container" class="place-container"></ul>
+            <div class="divider divider-neutral"></div>
+            <p class="text-xl font-medium">Total Cost: <span id="total-cost">0</span> $</p>
             <div class="">
               <button class="btn">Bus +100</button>
               <button class="btn mb-2">Train -200</button>
